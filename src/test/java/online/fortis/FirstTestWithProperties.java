@@ -3,6 +3,8 @@ package online.fortis;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import java.sql.SQLOutput;
+
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
@@ -14,7 +16,10 @@ public class FirstTestWithProperties extends TestBase{
     public void fillPracticeFormTests() {
         String browser = System.getProperty("browser");
         System.out.println(browser);
-        //String version = System.getProperty("version");
+        String version = System.getProperty("version");
+        System.out.println(version);
+        String remoteUrl = System.getProperty("remoteUrl");
+        System.out.println(remoteUrl);
         //String remoteURL = System.getProperty("remoteURL");
         //String userLogin = System.getProperty("userLogin");
         //String userPassword = System.getProperty("userPassword");
