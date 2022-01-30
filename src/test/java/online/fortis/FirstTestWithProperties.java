@@ -66,7 +66,7 @@ public class FirstTestWithProperties extends TestBase{
             $("#example-modal-sizes-title-lg").shouldBe(visible);
             $(".table-responsive").shouldHave(text("FirstName"), text("LastName"), text("test@test.ru"),
                     text("Other"), text("9991234567"), text("12 August,1986"), text("English, Computer Science"),
-                    text("Sports, Music"), text("Glazov.txt"), text("Any Address"), text("Haryana Karnal"));
+                    text("Sports, Music"), /*text("Glazov.txt"),*/ text("Any Address"), text("Haryana Karnal"));
         });
     }
 }
