@@ -14,17 +14,7 @@ import static io.qameta.allure.Allure.step;
 public class FirstTestWithProperties extends TestBase{
     @Test
     public void fillPracticeFormTests() {
-        String browser = System.getProperty("browser");
-        System.out.println(browser);
-        String version = System.getProperty("version");
-        System.out.println(version);
-        String remoteUrl = System.getProperty("remoteUrl");
-        System.out.println(remoteUrl);
-        //String remoteURL = System.getProperty("remoteURL");
-        //String userLogin = System.getProperty("userLogin");
-        //String userPassword = System.getProperty("userPassword");
-
-        step("Открываем страницу с формами", () -> {
+       step("Открываем страницу с формами", () -> {
             open("https://demoqa.com/automation-practice-form");
         });
         //fill form
