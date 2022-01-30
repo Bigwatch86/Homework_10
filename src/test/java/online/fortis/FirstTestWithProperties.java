@@ -14,9 +14,9 @@ public class FirstTestWithProperties {
     public void fillPracticeFormTests() {
         String browser = System.getProperty("borwser");
         String version = System.getProperty("version");
-        String remoteURL = System.getProperty("remoteURL");
-        String userLogin = System.getProperty("userLogin");
-        String userPassword = System.getProperty("userPassword");
+        //String remoteURL = System.getProperty("remoteURL");
+        //String userLogin = System.getProperty("userLogin");
+        //String userPassword = System.getProperty("userPassword");
 
         step("Открываем страницу с формами", () -> {
             open("/automation-practice-form");
