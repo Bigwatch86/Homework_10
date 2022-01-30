@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class FirstTestWithProperties {
+public class FirstTestWithProperties extends TestBase{
     @Test
     public void fillPracticeFormTests() {
         String browser = System.getProperty("browser");
