@@ -47,9 +47,9 @@ public class FirstTestWithProperties extends TestBase{
             $("[for=hobbies-checkbox-1]").click();
             $("[for=hobbies-checkbox-3]").click();
         });
-        step("Загружаем файл", () -> {
-            $("#uploadPicture").uploadFromClasspath("Glazov.txt");
-        });
+//        step("Загружаем файл", () -> {
+//            $("#uploadPicture").uploadFromClasspath("Glazov.txt");
+//        });
         step("Вводим адрес", () -> {
             $("#currentAddress").setValue("Any Address");
         });
