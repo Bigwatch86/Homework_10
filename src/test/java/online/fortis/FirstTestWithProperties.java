@@ -12,14 +12,15 @@ import static io.qameta.allure.Allure.step;
 public class FirstTestWithProperties {
     @Test
     public void fillPracticeFormTests() {
-        String browser = System.getProperty("borwser");
-        String version = System.getProperty("version");
+        String browser = System.getProperty("browser");
+        System.out.println(browser);
+        //String version = System.getProperty("version");
         //String remoteURL = System.getProperty("remoteURL");
         //String userLogin = System.getProperty("userLogin");
         //String userPassword = System.getProperty("userPassword");
 
         step("Открываем страницу с формами", () -> {
-            open("/automation-practice-form");
+            open("https://demoqa.com/automation-practice-form");
         });
         //fill form
         step("Вводим имя", () -> {
