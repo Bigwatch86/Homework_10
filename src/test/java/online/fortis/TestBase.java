@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class TestBase {
 
     @BeforeAll
-    void setUp() {
+    static void setUp() {
         String browser = System.getProperty("browser");
         String version = System.getProperty("version");
         String remoteUrl = System.getProperty("remoteUrl");
