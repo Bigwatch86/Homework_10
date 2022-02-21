@@ -1,6 +1,7 @@
 package online.fortis;
 
 import com.codeborne.selenide.Configuration;
+import config.Credentials;
 import config.CredentialsConfig;
 import helpers.Attach;
 import org.aeonbits.owner.ConfigFactory;
@@ -11,15 +12,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
-    CredentialsConfig config = ConfigFactory.create(CredentialsConfig.class);
 
     @BeforeAll
     void setUp() {
         String browser = System.getProperty("browser");
         String version = System.getProperty("version");
         String remoteUrl = System.getProperty("remoteUrl");
-        String login = config.login();
-        String password = config.password();
+        String login = Credentials.config.login();
+        String password = Credentials.config.password();
 
 //        String login = System.getProperty("login");
 //        String password = System.getProperty("password");
